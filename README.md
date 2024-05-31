@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Substack to Markdown Converter
 
-## Getting Started
+This project is a web application that allows users to convert Substack articles to Markdown format. It also provides a feature to download all articles from a Substack user as a ZIP file.
 
-First, run the development server:
+## Prerequisites
 
-```bash
+- Node.js 
+- Python 
+- Dependencies listed in `requirements.txt` and `package.json` (Install Via venv)
+
+## Installation
+
+1. Clone the repository:
+git clone https://github.com/your-username/substack-to-markdown-converter.git
+Copy code
+2. Navigate to the project directory:
+cd substack-to-markdown-converter
+Copy code
+3. Install Python dependencies:
+python -m venv venv
+source venv/bin/activate  # On Windows, use venv\Scripts\activate
+pip install -r requirements.txt
+Copy code
+4. Install Node.js dependencies:
+npm install
+Copy code
+## Usage
+
+1. Start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Copy code
+2. Open your browser and visit `http://localhost:3000`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. To convert a single Substack article:
+- Enter the Substack article URL in the input field.
+- Click the "Convert" button.
+- The converted Markdown content will be displayed, and you can download it as a file.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. To download all articles from a Substack user:
+- Enter the Substack username or profile URL in the input field.
+- Click the "Convert All" button.
+- A ZIP file containing all articles in Markdown format will be downloaded.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
 
-## Learn More
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the [MIT License](LICENSE).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+(Readme written by ChatGPT)
